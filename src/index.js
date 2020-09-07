@@ -16,6 +16,6 @@ document.addEventListener('DOMContenetLoaded',function(e){
     breedsElement.innerHTML=breed;
       document.getElementById("dog-breeds").appendChild(breedsElement);
       
-    })
+    }
   })
 });
