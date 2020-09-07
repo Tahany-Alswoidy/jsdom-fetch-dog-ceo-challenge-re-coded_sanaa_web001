@@ -10,7 +10,7 @@ document.addEventListener('DOMContenetLoaded',function(e){
   });
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
   fetch(breedUrl).then((res)=>res.json()).then((data)=>{
-     data.forEach((breed)=>
+     for(breed of data)
     { console.log(breed);
     let breedsElement=document.createElement("li");
     breedsElement.innerHTML=breed;
