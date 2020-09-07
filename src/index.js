@@ -7,5 +7,5 @@ document.addEventListener('DOMContenetLoaded',function(e){
       document.getElementById("dog-image-container").appendChild(document.createElement("img").setAttribute("src",image));
       
     })
-  })
+  });
 });
