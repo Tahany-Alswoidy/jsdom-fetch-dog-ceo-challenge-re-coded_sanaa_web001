@@ -19,4 +19,8 @@ document.addEventListener('DOMContenetLoaded',function(e){
     }
   })
 });
-// for(el of )
+// for(el of document.getElementsByTagName("li")){
+  el.addEventListener('click',()=>{
+    el.style.color='pink';
+  });
+}
