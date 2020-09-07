@@ -4,7 +4,7 @@ document.addEventListener('DOMContenetLoaded',function(){
   fetch(imgUrl).then((response)=>response.json()).then((data)=>{
     data.forEach((image)=>
     {
-      document.body.appendChild(document.createElement("img").setAttribute("src",image));
+      document.getElementById("dog-image-container").appendChild(document.createElement("img").setAttribute("src",image));
       
     })
   })
