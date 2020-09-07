@@ -14,7 +14,7 @@ document.addEventListener('DOMContenetLoaded',function(e){
     { console.log(breed);
     let breedsElement=document.createElement("li");
     breedsElement.innerHTML=breed;
-      document.getElementById("dog-breeds").appendChild(.setAttribute("src",image));
+      document.getElementById("dog-breeds").appendChild(breedsElement);
       
     })
   })
