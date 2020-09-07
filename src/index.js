@@ -10,6 +10,10 @@ document.addEventListener('DOMContenetLoaded',function(e){
   });
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
   fetch(breedUrl).then((res)=>res.json()).then((data)=>{
-    
+     data.forEach((image)=>
+    { console.log(image);
+      document.getElementById("dog-image-container").appendChild(document.createElement("img").setAttribute("src",image));
+      
+    })
   })
 });
