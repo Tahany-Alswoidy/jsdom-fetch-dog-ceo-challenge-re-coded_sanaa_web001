@@ -12,7 +12,9 @@ document.addEventListener('DOMContenetLoaded',function(e){
   fetch(breedUrl).then((res)=>res.json()).then((data)=>{
      data.forEach((breed)=>
     { console.log(breed);
-      document.getElementById("dog-image-container").appendChild(document.createElement("img").setAttribute("src",image));
+    let breedsElement=document.createElement("li");
+    breedsElement.innerHTML=breed;
+      document.getElementById("dog-breeds").appendChild(.setAttribute("src",image));
       
     })
   })
