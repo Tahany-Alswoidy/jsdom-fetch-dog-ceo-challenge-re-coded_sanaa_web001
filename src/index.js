@@ -4,7 +4,8 @@ document.addEventListener('DOMContenetLoaded',function(){
   fetch(imgUrl).then((response)=>response.json()).then((data)=>{
     data.forEach((image)=>
     {
-      documen.createElement("img").setAttribute("src",image);
+      document.appendChild(document.createElement("img").setAttribute("src",image));
+      
     })
   })
 });
